@@ -7,11 +7,12 @@ Today you can quickly make one with node/npm and TypeScript!
 
 With this seed, you can create your own in a couple of minutes and publish it on [npmjs.com](https://www.npmjs.com/) registry to share to your team or the community!
 
+![](docs/img/wow.webp)
+
 This seed has an example with a simple sum of numbers.
 
 If you want to try it, install it with: `npm i -g seed-cli-ts` and in your terminal: `suma 1 2` (yes, the command is "suma")
 
-![](docs/img/wow.webp)
 
 ---
 
