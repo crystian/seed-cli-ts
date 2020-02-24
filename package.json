@@ -11,7 +11,7 @@
 		"tsc": "tsc --noEmit",
 		"build-types": "tsc --rootDir src --declaration --emitDeclarationOnly --declarationDir dist/types",
 		"build-prod": "babel src --out-dir bin --extensions \".ts,.tsx\"",
-		"preversion": "npm run test",
+		"preversion": "jest",
 		"prepublishOnly": "npm run build-prod && npm version patch && pkg-ok"
 	},
 	"devDependencies": {
