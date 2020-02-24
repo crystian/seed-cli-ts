@@ -1,6 +1,6 @@
-import { argValidator } from './validators';
+import { paramsValidator } from './validators';
 
 export function sum(arg: string[]): string {
-	argValidator(arg);
+	paramsValidator(arg);
 	return arg[0] + arg[1];
 }

@@ -46,9 +46,7 @@ module.exports = {
 		]
 	},
 	'globals': {
-		'console': true,
-		'RuntimeError': true,
-		'ErrorData': true
+		'console': true
 	},
 	'parser': '@typescript-eslint/parser',
 	'plugins': [

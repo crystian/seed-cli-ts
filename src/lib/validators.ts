@@ -1,9 +1,11 @@
-export const argValidator = (arg: string[]) => {
+import { errors } from './errors';
+
+export const paramsValidator = (arg: string[]) => {
 	console.log(arg);
-	// if (r.length > 0) {
-	// console.log(foo);
-	// throw new RuntimeError({code: 1, message: 'dsa'});
-	// }
+
+	if (arg.length !== 2) {
+		throw new Error(errors.twoNumbersOnly);
+	}
 
 	return true;
 };
