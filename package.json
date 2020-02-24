@@ -1,0 +1,89 @@
+{
+	"name": "seed-cli-ts",
+	"version": "0.0.3",
+	"description": "seed cli ts",
+	"scripts": {
+		"start": "npm run build -- --watch --verbose",
+		"build": "babel src --out-dir bin --extensions \".ts,.tsx\" --source-maps inline",
+		"test": "jest --watchAll",
+		"coverage": "jest --collectCoverage",
+		"lint": "eslint -c eslint.config.js src/**/*.ts --fix",
+		"tsc": "tsc --noEmit",
+		"build-types": "tsc --rootDir src --declaration --emitDeclarationOnly --declarationDir dist/types",
+		"build-prod": "babel src --out-dir bin --extensions \".ts,.tsx\"",
+		"preversion": "npm run test",
+		"prepublishOnly": "npm run build-prod && npm version patch && pkg-ok"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.8.4",
+		"@babel/core": "^7.8.4",
+		"@babel/preset-env": "^7.8.4",
+		"@babel/preset-typescript": "^7.8.3",
+		"@types/jest": "^25.1.3",
+		"@types/node": "^13.7.4",
+		"@typescript-eslint/parser": "^2.20.0",
+		"babel-eslint": "^10.0.3",
+		"babel-jest": "^25.1.0",
+		"eslint": "^6.8.0",
+		"eslint-plugin-jest": "^23.8.0",
+		"husky": "^4.2.3",
+		"jest": "^25.1.0",
+		"pkg-ok": "^2.3.1",
+		"ts-jest": "^25.2.1",
+		"ts-loader": "^6.2.1",
+		"typescript": "^3.8.2"
+	},
+	"dependencies": {},
+	"main": "./bin/sum.js",
+	"bin": {
+		"sum": "./bin/sum.js"
+	},
+	"files": [
+		"bin",
+		"docs",
+		"lib",
+		"package.json",
+		"LICENSE",
+		"README.md",
+		"CHANGELOG.md"
+	],
+	"directories": {
+		"lib": "lib",
+		"bin": "bin",
+		"man": "docs",
+		"test": "test"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "npm run lint",
+			"pre-push": "npm run coverage && npm run build"
+		}
+	},
+	"license": "MIT",
+	"authors": [
+		"Crystian 'pusher' Bietti (https://www.linkedin.com/in/crystian)"
+	],
+	"keywords": [
+		"seed",
+		"bootstrap",
+		"boilerplate",
+		"cli",
+		"typescript",
+		"ts",
+		"es6",
+		"babel",
+		"istanbul",
+		"jest",
+		"eslint"
+	],
+	"bugs": "https://github.com/crystian/seed-cli-ts/issues",
+	"homepage": "https://github.com/crystian/seed-cli-ts",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/crystian/seed-cli-ts"
+	},
+	"engines": {
+		"node": ">=12.0.0",
+		"npm": ">=6.0.0"
+	}
+}
