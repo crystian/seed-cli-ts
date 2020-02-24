@@ -18,7 +18,7 @@ module.exports = {
 	// cacheDirectory: "D:\\SYSTEM\\TEMP\\user\\jest",
 
 	// Automatically clear mock calls and instances between every test
-	clearMocks: true,
+	// clearMocks: true,
 
 	// Indicates whether the coverage information should be collected while executing the test
 	collectCoverage: false,
@@ -190,7 +190,7 @@ module.exports = {
 	// unmockedModulePathPatterns: undefined,
 
 	// Indicates whether each individual test should be reported during the run
-	verbose: true,
+	verbose: false,
 
 	// An array of regexp patterns that are matched against all source file paths before re-running tests in watch mode
 	// watchPathIgnorePatterns: [],
