@@ -1,6 +1,6 @@
 {
 	"name": "seed-cli-ts",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "seed cli ts",
 	"scripts": {
 		"start": "npm run build -- --watch --verbose",
