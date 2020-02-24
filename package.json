@@ -34,21 +34,20 @@
 		"typescript": "^3.8.2"
 	},
 	"dependencies": {},
-	"main": "./bin/sum.js",
+	"main": "./bin/suma.js",
 	"bin": {
-		"sum": "./bin/sum.js"
+		"suma": "./bin/suma.js"
 	},
 	"files": [
 		"bin",
 		"docs",
-		"lib",
 		"package.json",
 		"LICENSE",
 		"README.md",
 		"CHANGELOG.md"
 	],
 	"directories": {
-		"lib": "lib",
+		"lib": "src/lib",
 		"bin": "bin",
 		"man": "docs",
 		"test": "test"

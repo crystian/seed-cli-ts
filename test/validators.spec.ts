@@ -1,5 +1,4 @@
-import { paramsValidator } from '../src/lib/validators';
-import { errors } from '../src/lib';
+import { errors, paramsValidator } from '../src/lib';
 
 describe('paramsValidator: ', () => {
 	test('should throw an error by empty params', () => {

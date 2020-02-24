@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { i18n, sum } from './lib';
+import { i18n, suma } from './lib';
 
 process.title = i18n.appName;
 
@@ -11,7 +11,7 @@ const timestampStart: Date = new Date();
 try {
 
 	// The main an the single entry point to your Commando Line Interface!
-	const result = sum(parameters);
+	const result = suma(parameters);
 	console.log('Result:', result);
 
 } catch (e) {
