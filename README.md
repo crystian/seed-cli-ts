@@ -1,3 +1,5 @@
+# DEPRECATED a favor to [vite](https://vitejs.dev/)
+---
 # This is a seed for your Command Line Interface (CLI) with TypeScript!
 
 ### TL;DR
